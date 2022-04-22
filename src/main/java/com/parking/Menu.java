@@ -2,7 +2,9 @@ package com.parking;
 
 public class Menu {
 
-    public void printMenu(){
+    // TODO: Delete this class
+
+    public void printMenu() {
         System.out.println("+--------------------------------------+");
         System.out.println("|             MENU PRINCIPAL           |");
         System.out.println("+--------------------------------------+");
