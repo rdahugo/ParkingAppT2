@@ -5,7 +5,7 @@ public class Truck extends Vehicle implements ICalculateFeeDiscount{
     //Día completo: 15000
     //Fracción: 15000/24 = 625
     //Menos de un día (entre 00:01 minuto y 23:59 horas): 10000
-    //Sorteo: numero aleatorio entre 1 y 1000, paga el mínimo (2000)
+    //Sorteo: número aleatorio entre 1 y 1000, paga el mínimo (2000)
 
     public Truck(double timeParking, int lotteryNumber) {
         super(timeParking);
@@ -35,9 +35,7 @@ public class Truck extends Vehicle implements ICalculateFeeDiscount{
         int min = 1;
         int max = 1000;
 
-        int lotteryNumber = (int) (Math.random() * (max - min + 1) + min);
-
-        return lotteryNumber;
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 
     @Override
