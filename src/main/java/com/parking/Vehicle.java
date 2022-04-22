@@ -2,37 +2,29 @@ package com.parking;
 
 public abstract class Vehicle {
 
-    private double minAmmount;
-    private double ammount;
-    private int parkingTime;
+    private double timeParking = 0;
+    private double totalAmount;
 
-    public Vehicle(double minAmmount, double ammount, int parkingTime) {
-        this.minAmmount = minAmmount;
-        this.ammount = ammount;
-        this.parkingTime = parkingTime;
+    public abstract String description();
+
+    public Vehicle(double timeParking, double totalAmount) {
+        this.timeParking = timeParking;
+        this.totalAmount = totalAmount;
     }
 
-    public double getMinAmmount() {
-        return minAmmount;
+    public double getTimeParking() {
+        return timeParking;
     }
 
-    public void setMinAmmount(double minAmmount) {
-        this.minAmmount = minAmmount;
+    public void setTimeParking(int timeParking) {
+        this.timeParking = timeParking;
     }
 
-    public double getAmmount() {
-        return ammount;
+    public double getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setAmmount(double ammount) {
-        this.ammount = ammount;
-    }
-
-    public int getParkingTime() {
-        return parkingTime;
-    }
-
-    public void setParkingTime(int parkingTime) {
-        this.parkingTime = parkingTime;
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 }
