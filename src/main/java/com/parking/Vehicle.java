@@ -3,13 +3,12 @@ package com.parking;
 public abstract class Vehicle {
 
     private double timeParking = 0;
-    private double totalAmount;
+    private double totalAmount = 0;
 
     public abstract String description();
 
-    public Vehicle(double timeParking, double totalAmount) {
+    public Vehicle(double timeParking) {
         this.timeParking = timeParking;
-        this.totalAmount = totalAmount;
     }
 
     public double getTimeParking() {

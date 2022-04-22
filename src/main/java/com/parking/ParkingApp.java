@@ -35,7 +35,7 @@ public class ParkingApp {
             vehicles.add(motorcycle2);
             vehicles.add(motorcycle3);
 
-            Vehicle truck1 = new Truck(96, lotteryNumber);
+            Vehicle truck1 = new Truck(96.9, lotteryNumber);
             Vehicle truck2 = new Truck(18, lotteryNumber);
             Vehicle truck3 = new Truck(4, lotteryNumber);
             vehicles.add(truck1);
@@ -53,10 +53,9 @@ public class ParkingApp {
         for (Vehicle vehicle : vehicles) {
 
             System.out.println();
-            System.out.println("Vehículo: " + vehicle.description());
-            System.out.println("Tiempo estacionado: " + vehicle.getParkingTime());
-            System.out.println("Costo: " + vehicle.calculateFee());
-            System.out.println();
+            System.out.println("Vehicle: " + vehicle.description());
+            System.out.println("Parking Time: " + vehicle.getTimeParking());
+            System.out.println("Parking Fee: " + vehicle.getTotalAmount());
         }
     }
 }
